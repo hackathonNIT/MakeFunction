@@ -22,7 +22,7 @@ def func1(X, *params):
 def func(X, *params):
     Y = np.zeros_like(X)
     for i, param in enumerate(params):
-        Y = Y + np.array(param * X ** i)
+        Y = Y + np.array(param * (X ** i))
     return Y
 def getRegressionLineND():
 
